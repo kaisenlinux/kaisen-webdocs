@@ -1,20 +1,22 @@
 Source: kaisen-webdocs
-Section: optional
+Section: kaisen-packages
 Priority: optional
-Maintainer: Arnaud Cormier - magiknono <magiknono@kaisenlinux.org>
-Build-Depends: debhelper-compat (= 13)
+Maintainer: Arnaud Cormier - Magiknono <magiknono@kaisenlinux.org>
+Build-Depends: debhelper
 Standards-Version: 4.5.1
 Homepage: https://kaisenlinux.org
-#Vcs-Browser: https://salsa.debian.org/debian/kaisen-manpages
-#Vcs-Git: https://salsa.debian.org/debian/kaisen-manpages.git
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/kaisen-webdocs
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-webdocs.git
 
 Package: kaisen-documentation
 Architecture: all
+Depends: firefox | firefox-esr
 Description: Offline documentation from kaisenlinux.org/documentation/
  Kaisen documentation access from menu
 
 Package: kaisen-manpages
 Architecture: all
+Depends: firefox | firefox-esr
 Description: Offline manpages from kaisenlinux.org/manpages/
  Kaisen manpages access from menu
 
