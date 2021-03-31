@@ -1,3 +1,9 @@
+kaisen-webdocs (1.6+kaisen1) kaisen-packages; urgency=medium
+
+  * Remove firefox dependancy
+
+ -- Arnaud Cormier - Magiknono <magiknono@kaisenlinux.org>  Thu, 31 Mar 2021 06:42:09 +0100
+
 kaisen-webdocs (1.6) kaisen-packages; urgency=medium
 
   * Update kaisen-documentation to 1.6 and add tutorials :
