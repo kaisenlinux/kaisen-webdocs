@@ -1,7 +1,8 @@
 Source: kaisen-webdocs
 Section: kaisen-packages
 Priority: optional
-Maintainer: Arnaud Cormier - Magiknono <magiknono@kaisenlinux.org>
+Maintainer: Arnaud Cormier - Magiknono <magiknono@kaisenlinux.org>, Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+Uploaders: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
 Build-Depends: debhelper
 Standards-Version: 4.5.1
 Homepage: https://kaisenlinux.org
