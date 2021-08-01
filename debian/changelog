@@ -1,9 +1,3 @@
-kaisen-webdocs (1.8) kaisen-packages; urgency=medium
-
-  * Update documentation for 1.8
-
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 01 Aug 2021 23:17:54 +0200
-
 kaisen-webdocs (1.7) kaisen-packages; urgency=medium
 
   * Update documentation and manpages for 1.7
