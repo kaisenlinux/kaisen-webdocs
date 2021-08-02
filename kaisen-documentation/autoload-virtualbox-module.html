@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.23.0">
     <meta name="project" content="Documentation v1.8.0">
 
-    <title>Create chroot — Documentation v1.8.0</title>
+    <title>Autoload VirtualBox module at boot — Documentation v1.8.0</title>
     <link rel="stylesheet" href="dist/elixir-9f91ebe876dc01d67920.css" />
 
     <script src="dist/sidebar_items-bd2e3b0443.js"></script>
@@ -74,53 +74,19 @@ Documentation
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-<h1>Create chroot</h1><h2 id="explanations" class="section-heading">
-  <a href="#explanations" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
-  Explanations
+<h1>Autoload VirtualBox module at boot</h1><h2 id="on-active-systems" class="section-heading">
+  <a href="#on-active-systems" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  On active systems
 </h2>
-<p>The chroot creation permit to be able to restore a damaged system, while mounting its damaged system on mount points (example /mnt /folder), and to execute the chroot command to &quot;lock itself&quot; on the mounted system and thus be able to work on it as if it was started.
-This is mainly useful for systems that can no longer boot conventionally.</p><h2 id="classic-partition" class="section-heading">
-  <a href="#classic-partition" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
-  Classic partition
+<p>On full live ISOS, by default the VirtualBox module is launched at the start of the distribution because the configuration has been done beforehand. Even if the distribution and VirtualBox are updated, this configuration will remain effective.</p><h2 id="on-netinst-iso" class="section-heading">
+  <a href="#on-netinst-iso" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  On NETINST ISO
 </h2>
-<pre><code class="bash">sudo fdisk -l (Locate the EFI Linux partition and /)
-sudo mount /dev/sdX /mnt (X represents the drive letter)
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /dev/pts /mnt/dev/pts
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
-sudo mount /dev/sdXY /mnt/boot/efi (X represents the drive letter, and the Y the EFI partition number, it should be the first)
-sudo chroot /mnt</code></pre><h2 id="lvm-without-luks-encryption" class="section-heading">
-  <a href="#lvm-without-luks-encryption" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
-  LVM without LUKS encryption
+<p>On the NETINST ISO, this configuration will be done automatically if you install <a href="netinst.html#how-the-netinst-installer-works">all the tools for sysadmin</a> or <a href="netinst.html#how-the-netinst-installer-works">only the virtualization tools</a>.</p><h2 id="do-it-manually" class="section-heading">
+  <a href="#do-it-manually" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Do it manually
 </h2>
-<pre><code class="bash">sudo fdisk -l (Locate the EFI Linux partition and /)
-sudo vgscan
-sudo vgchange -ay
-sudo mount /dev/mapper/name--vg-root /mnt (name--vg-root represents the name of the logical volume returned by the 
-vgscan command)
-sudo mount /dev/sdXY /mnt/boot (mount boot partition)
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /dev/pts /mnt/dev/pts
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
-sudo mount /dev/sdXY /mnt/boot/efi (mount the EFI partition often, this partition is often the first)
-sudo chroot /mnt</code></pre><h2 id="lvm-with-luks-encryption" class="section-heading">
-  <a href="#lvm-with-luks-encryption" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
-  LVM with LUKS encryption
-</h2>
-<pre><code class="bash">sudo fdisk -l (Locate the EFI Linux partition and /)
-sudo cryptsetup luksOpen /dev/sdXY sdxy_crypt (X represents the drive letter, Y the partition / encrypted number)
-sudo vgscan
-sudo vgchange -ay
-sudo mount /dev/mapper/name--vg-root /mnt (name--vg-root represents the name of the logical volume returned by the vgscan command)
-sudo mount /dev/sdXY /mnt/boot (mount boot partition)
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /dev/pts /mnt/dev/pts
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
-sudo mount /dev/sdXY /mnt/boot/efi (mount the EFI partition often /dev/sdX1)
-sudo chroot /mnt</code></pre>
+<p>If you have not installed Kaisen Linux via the NETINST installer and you want to avoid the &quot;modprobe vboxdrv&quot; message at each boot you need to perform this configuration:</p><pre><code class="bash">echo &quot;vboxdrv&quot; | sudo tee /etc/modules-load.d/virtualbox.conf</code></pre><p>This configuration will remain effective even after an update of VirtualBox or the distribution.</p>
       <footer class="footer">
         <p>
           <span class="line">
