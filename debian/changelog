@@ -1,8 +1,18 @@
+kaisen-webdocs (2.1+kaisen2) kaisen-packages; urgency=medium
+
+  * Add more than 400 manpages
+  * Update english
+  * Change packages by commands
+  * Classification by alphabetic order (for categories)
+  * Deletion of non-uniq generated manpage
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 15 Jul 2022 04:49:07 +0100
+
 kaisen-webdocs (2.1+kaisen1) kaisen-packages; urgency=medium
 
   * Update manpages for 2.1 release with docker extra manpages
 
- -- Arnaud Cormier - Magiknono <magiknono@kaisenlinux.org>  Thu, 07 Apr 2021 20:38:45 +0100
+ -- Arnaud Cormier - Magiknono <magiknono@kaisenlinux.org>  Wed, 13 Jul 2022 21:32:43 +0100
 
 kaisen-webdocs (2.1) kaisen-packages; urgency=medium
 
