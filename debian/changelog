@@ -1,3 +1,11 @@
+kaisen-webdocs (2.1+kaisen3) kaisen-packages; urgency=medium
+
+  * Adding almost 100 manpages
+  * Rename js files in packages instead of commands
+  * Improvement of software categories
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sat, 16 Jul 2022 00:10:33 +0100
+
 kaisen-webdocs (2.1+kaisen2) kaisen-packages; urgency=medium
 
   * Add more than 400 manpages
