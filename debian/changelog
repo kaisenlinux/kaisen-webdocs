@@ -1,3 +1,10 @@
+kaisen-webdocs (2.1+kaisen4) kaisen-packages; urgency=medium
+
+  * Update the documentation to add new modifications for the 2.1 release
+  * Update the ExDocs theme used for manpages
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 19 Aug 2022 05:11:56 +0100
+
 kaisen-webdocs (2.1+kaisen3) kaisen-packages; urgency=medium
 
   * Adding almost 100 manpages
