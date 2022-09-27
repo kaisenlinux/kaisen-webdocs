@@ -1,3 +1,10 @@
+kaisen-webdocs (2.1+kaisen7) kaisen-packages; urgency=medium
+
+  * Update links, tools list, the kaisen-firmwares metapackage and
+    the KDE default profile reapplying
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 28 Aug 2022 01:52:03 +0100
+
 kaisen-webdocs (2.1+kaisen6) kaisen-packages; urgency=medium
 
   * Update links and typo in the documentation
