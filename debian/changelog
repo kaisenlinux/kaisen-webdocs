@@ -1,3 +1,9 @@
+kaisen-webdocs (2.1+kaisen8) kaisen-packages; urgency=medium
+
+  * Update the documentation and manpages for the 2.2RC2 release
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Mon, 24 Oct 2022 03:18:55 +0100
+
 kaisen-webdocs (2.1+kaisen7) kaisen-packages; urgency=medium
 
   * Update links, tools list, the kaisen-firmwares metapackage and
