@@ -11,13 +11,13 @@ Vcs-Git: https://gitlab.com/kaisenlinux/packages/kaisen-webdocs.git
 
 Package: kaisen-documentation
 Architecture: all
-Depends: firefox | firefox-esr
+Suggests: firefox | firefox-esr
 Description: Offline documentation from kaisenlinux.org/documentation/
  Kaisen documentation access from menu
 
 Package: kaisen-manpages
 Architecture: all
-Depends: firefox | firefox-esr
+Suggests: firefox | firefox-esr
 Description: Offline manpages from kaisenlinux.org/manpages/
  Kaisen manpages access from menu
 

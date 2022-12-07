@@ -1,3 +1,10 @@
+kaisen-webdocs (2.2) kaisen-packages; urgency=medium
+
+  * Update the documentation and manpages for the 2.2 release
+  * Change the Depends field in Suggests field
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 07 Dec 2022 02:33:41 +0100
+
 kaisen-webdocs (2.1+kaisen8) kaisen-packages; urgency=medium
 
   * Update the documentation and manpages for the 2.2RC2 release
