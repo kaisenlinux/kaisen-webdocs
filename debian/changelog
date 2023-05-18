@@ -1,3 +1,12 @@
+kaisen-webdocs (2.3) kaisen-packages; urgency=medium
+
+  * Update the documentation for the 2.3 release
+  * The following manpages added:
+    - All LXC and LXD manpages
+    - All configurations files manpages
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 19 May 2023 01:34:49 +0100
+
 kaisen-webdocs (2.2+kaisen2) kaisen-packages; urgency=medium
 
   * Update the GNS3 documentation and add the Kubeshark tool
