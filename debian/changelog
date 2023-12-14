@@ -1,3 +1,9 @@
+kaisen-webdocs (2.3+kaisen1) kaisen-packages; urgency=medium
+
+  * Rebuild for the new logo
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 14 Dec 2023 02:14:57 +0100
+
 kaisen-webdocs (2.3) kaisen-packages; urgency=medium
 
   * Update the documentation for the 2.3 release
