@@ -4,42 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.31.0">
-    <meta name="project" content="Manpages v2.3.0">
+    <meta name="generator" content="ExDoc v0.38.2">
+    <meta name="project" content="Manpages v3.0.0">
 
 
-    <title>cups-snmp.conf — Manpages v2.3.0</title>
-    <link rel="stylesheet" href="dist/html-elixir-3ZLIM5JF.css" />
+    <title>cups-snmp.conf — Manpages v3.0.0</title>
 
+    <link rel="stylesheet" href="dist/html-elixir-KV3YOVJ3.css" />
 
-    <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
-    <script src="dist/handlebars.templates-43PMFBC7.js"></script>
-    <script src="dist/sidebar_items-22CD0DBC.js"></script>
-
-      <script src="doc-versions.js"></script>
-
-    <script async src="dist/html-CILPWI2Q.js"></script>
-
+    <script defer src="dist/sidebar_items-23381D40.js"></script>
+    <script defer src="docs_config.js"></script>
+    <script defer src="dist/html-DPJLHKSM.js"></script>
 <link rel="stylesheet" href="assets/doc.css">
   </head>
-  <body data-type="extras" class="page-extra">
-    <script>
+  <body>
+    <script>(()=>{var t="ex_doc:settings",e="dark";var o="dark",s="light";var E="sidebar_state",n="closed";var r="sidebar_width";var a="sidebar-open";var i=new URLSearchParams(window.location.search),S=i.get("theme")||JSON.parse(localStorage.getItem(t)||"{}").theme;(S===o||S!==s&&window.matchMedia("(prefers-color-scheme: dark)").matches)&&document.body.classList.add(e);var d=sessionStorage.getItem(E),A=d!==n&&!window.matchMedia(`screen and (max-width: ${768}px)`).matches;document.body.classList.toggle(a,A);var c=sessionStorage.getItem(r);c&&document.body.style.setProperty("--sidebarWidth",`${c}px`);var p=/(Macintosh|iPhone|iPad|iPod)/.test(window.navigator.userAgent);document.documentElement.classList.toggle("apple-os",p);})();
+</script>
 
-      try {
-        var settings = JSON.parse(localStorage.getItem('ex_doc:settings') || '{}');
+<div class="body-wrapper">
 
-        if (settings.theme === 'dark' ||
-           ((settings.theme === 'system' || settings.theme == null) &&
-             window.matchMedia('(prefers-color-scheme: dark)').matches)
-           ) {
-          document.body.classList.add('dark')
-        }
-      } catch (error) { }
-    </script>
-
-<div class="main">
-
-<button class="sidebar-button sidebar-toggle" aria-label="toggle sidebar" aria-controls="sidebar">
+<button id="sidebar-menu" class="sidebar-button sidebar-toggle" aria-label="toggle sidebar" aria-controls="sidebar">
   <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
 </button>
 
@@ -48,108 +32,93 @@
   <div class="sidebar-header">
     <div class="sidebar-projectInfo">
 
-        <a href="https://kaisenlinux.org/manpages/" class="sidebar-projectImage">
+        <a href="/usr/share/kaisen-manpages/readme.html" class="sidebar-projectImage">
           <img src="assets/logo.png" alt="Manpages" />
         </a>
 
       <div>
-        <a href="https://kaisenlinux.org/manpages/" class="sidebar-projectName" translate="no">
+        <a href="/usr/share/kaisen-manpages/readme.html" class="sidebar-projectName" translate="no">
 Manpages
         </a>
         <div class="sidebar-projectVersion" translate="no">
-          v2.3.0
+          v3.0.0
         </div>
       </div>
     </div>
-    <ul id="sidebar-listNav" class="sidebar-listNav" role="tablist">
-      <li>
-        <button id="extras-list-tab-button" role="tab" data-type="extras" aria-controls="extras-tab-panel" aria-selected="true" tabindex="0">
-MANUALS
-        </button>
-      </li>
-
-
-    </ul>
+    <ul id="sidebar-list-nav" class="sidebar-list-nav" role="tablist" data-extras="MANUALS"></ul>
   </div>
-
-  <div id="extras-tab-panel" class="sidebar-tabpanel" role="tabpanel" aria-labelledby="extras-list-tab-button">
-    <ul id="extras-full-list" class="full-list"></ul>
-  </div>
-
-
 </nav>
 
-<main class="content">
-  <output role="status" id="toast"></output>
-  <div class="content-outer">
-    <div id="content" class="content-inner">
-      <div class="top-search">
-        <div class="search-settings">
-          <form class="search-bar" action="search.html">
-            <label class="search-label">
-              <span class="sr-only">Search documentation of Manpages</span>
-              <input name="q" type="text" class="search-input" placeholder="Search Documentation (press /)" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-            </label>
-            <button type="submit" class="search-button" aria-label="Submit Search">
-              <i class="ri-search-2-line ri-lg" aria-hidden="true" title="Submit search"></i>
-            </button>
-            <button type="button" tabindex="-1" class="search-close-button" aria-hidden="true">
-              <i class="ri-close-line ri-lg" title="Cancel search"></i>
-            </button>
-          </form>
-          <button class="icon-settings display-settings">
-            <i class="ri-settings-3-line"></i>
-            <span class="sr-only">Settings</span>
+<output role="status" id="toast"></output>
+
+<main class="content page-extra" id="main" data-type="extras">
+  <div id="content" class="content-inner">
+    <div class="top-search">
+      <div class="search-settings">
+        <form class="search-bar" action="search.html">
+          <label class="search-label">
+            <span class="sr-only">Search documentation of Manpages</span>
+            <input name="q" type="text" class="search-input" placeholder="Press / to search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+          </label>
+          <button type="submit" class="search-button" aria-label="Submit Search" tabindex="-1">
+            <i class="ri-search-2-line ri-lg" aria-hidden="true"></i>
           </button>
+          <button type="button" tabindex="-1" class="search-close-button" aria-hidden="true">
+            <i class="ri-close-line ri-lg" title="Cancel search"></i>
+          </button>
+        </form>
+        <div class="autocomplete">
         </div>
+        <button class="icon-settings display-settings">
+          <i class="ri-settings-3-line"></i>
+          <span class="sr-only">Settings</span>
+        </button>
       </div>
-      <div class="autocomplete">
-      </div>
+    </div>
 
-<h1>
+<div id="top-content">
+  <div class="heading-with-actions top-heading">
+    <h1>cups-snmp.conf</h1>
 
 
-  <span>cups-snmp.conf</span>
-</h1>
+  </div>
 
-<p>snmp.conf(5)                                                                OpenPrinting                                                                snmp.conf(5)</p><p>NOM</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="n">snmp</span><span class="o">.</span><span class="n">conf</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nc">Fichier</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">configuration</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="nc">CUPS</span><span class="w"> </span><span class="p" data-group-id="4545521059-1">(</span><span class="n">obsolète</span><span class="p" data-group-id="4545521059-1">)</span></code></pre><p>DESCRIPTION</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">Le</span><span class="w">  </span><span class="n">fichier</span><span class="w"> </span><span class="n">snmp</span><span class="o">.</span><span class="n">conf</span><span class="w"> </span><span class="n">configure</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">façon</span><span class="w"> </span><span class="n">dont</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">programmes</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">transmission</span><span class="w"> </span><span class="n">réseau</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="nc">CUPS</span><span class="w"> </span><span class="p" data-group-id="8217351769-1">(</span><span class="n">http</span><span class="p">,</span><span class="w"> </span><span class="n">https</span><span class="p">,</span><span class="w"> </span><span class="n">ipp</span><span class="p">,</span><span class="w"> </span><span class="n">ipps</span><span class="p">,</span><span class="w"> </span><span class="n">lpd</span><span class="p">,</span><span class="w"> </span><span class="n">snmp</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">socket</span><span class="p" data-group-id="8217351769-1">)</span><span class="w"> </span><span class="n">accèdent</span><span class="w"> </span><span class="n">aux</span><span class="w"> </span><span class="n">infor</span><span class="err">‐</span><span class="w">
-   </span><span class="n">mations</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">l</span><span class="sc">&#39;imprimante en utilisant SNMP version 1 et se trouve normalement dans le répertoire /etc/cups. Chaque ligne  du  fichier  est  une  directive  de
-   configuration, une ligne vide ou un commentaire. Les commentaires commencent par le caractère « # ».
 
-   Les  directives  Community  et DebugLevel sont utilisées par tous les programmes de transmission. Le reste ne s&#39;</span><span class="n">applique</span><span class="w"> </span><span class="n">qu</span><span class="err">&#39;</span><span class="n">au</span><span class="w"> </span><span class="n">programme</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">transmission</span><span class="w"> </span><span class="nc">SNMP</span><span class="w">
-   </span><span class="p" data-group-id="8217351769-2">(</span><span class="n">cups</span><span class="o">-</span><span class="n">snmp</span><span class="p" data-group-id="8217351769-3">(</span><span class="mi">8</span><span class="p" data-group-id="8217351769-3">)</span><span class="p" data-group-id="8217351769-2">)</span><span class="o">.</span></code></pre><p>DIRECTIVES</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">Les</span><span class="w"> </span><span class="n">directives</span><span class="w"> </span><span class="n">suivantes</span><span class="w"> </span><span class="n">sont</span><span class="w"> </span><span class="n">comprises</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">programmes</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">transmission</span><span class="w"> </span><span class="n">réseau</span><span class="w"> </span><span class="p">:</span><span class="w">
+<p>snmp.conf(5)                                                                             OpenPrinting                                                                             snmp.conf(5)</p><p>NAME</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="n">snmp</span><span class="o">.</span><span class="n">conf</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">snmp</span><span class="w"> </span><span class="n">configuration</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">cups</span><span class="w"> </span><span class="p" data-group-id="9005641632-1">(</span><span class="n">deprecated</span><span class="p" data-group-id="9005641632-1">)</span></code></pre><p>DESCRIPTION</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">The</span><span class="w"> </span><span class="n">snmp</span><span class="o">.</span><span class="n">conf</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="n">configures</span><span class="w"> </span><span class="n">how</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">standard</span><span class="w"> </span><span class="nc">CUPS</span><span class="w"> </span><span class="n">network</span><span class="w"> </span><span class="n">backends</span><span class="w"> </span><span class="p" data-group-id="7454241409-1">(</span><span class="n">http</span><span class="p">,</span><span class="w"> </span><span class="n">https</span><span class="p">,</span><span class="w"> </span><span class="n">ipp</span><span class="p">,</span><span class="w"> </span><span class="n">ipps</span><span class="p">,</span><span class="w"> </span><span class="n">lpd</span><span class="p">,</span><span class="w"> </span><span class="n">snmp</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">socket</span><span class="p" data-group-id="7454241409-1">)</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">printer</span><span class="w"> </span><span class="n">information</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="nc">SNMPv1</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">normally</span><span class="w"> </span><span class="n">located</span><span class="w"> </span><span class="ow">in</span><span class="w">
+   </span><span class="n">the</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">cups</span><span class="w"> </span><span class="n">directory</span><span class="o">.</span><span class="w">  </span><span class="nc">Each</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">configuration</span><span class="w"> </span><span class="n">directive</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">blank</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">comment</span><span class="o">.</span><span class="w"> </span><span class="nc">Comment</span><span class="w"> </span><span class="n">lines</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="c1"># character.</span><span class="w">
 
-   </span><span class="nc">Address</span><span class="w"> </span><span class="err">@</span><span class="nc">IF</span><span class="p" data-group-id="5262219451-1">(</span><span class="n">nom</span><span class="p" data-group-id="5262219451-1">)</span><span class="w">
+   </span><span class="nc">The</span><span class="w"> </span><span class="nc">Community</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="nc">DebugLevel</span><span class="w"> </span><span class="n">directives</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">all</span><span class="w"> </span><span class="n">backends</span><span class="o">.</span><span class="w"> </span><span class="nc">The</span><span class="w"> </span><span class="n">remainder</span><span class="w"> </span><span class="n">apply</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="n">backend</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cups</span><span class="o">-</span><span class="n">snmp</span><span class="p" data-group-id="7454241409-2">(</span><span class="mi">8</span><span class="p" data-group-id="7454241409-2">)</span><span class="o">.</span></code></pre><p>DIRECTIVES</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">The</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">directives</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">understood</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="nc">CUPS</span><span class="w"> </span><span class="n">network</span><span class="w"> </span><span class="ss">backends</span><span class="p">:</span><span class="w">
+
+   </span><span class="nc">Address</span><span class="w"> </span><span class="err">@</span><span class="nc">IF</span><span class="p" data-group-id="3897797944-1">(</span><span class="n">name</span><span class="p" data-group-id="3897797944-1">)</span><span class="w">
 
    </span><span class="nc">Address</span><span class="w"> </span><span class="err">@</span><span class="nc">LOCAL</span><span class="w">
 
-   </span><span class="nc">Address</span><span class="w"> </span><span class="n">adresse</span><span class="w">
-        </span><span class="err">É</span><span class="n">mettre</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">requêtes</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="p" data-group-id="5262219451-2">(</span><span class="n">pour</span><span class="w"> </span><span class="n">recherche</span><span class="p" data-group-id="5262219451-2">)</span><span class="w"> </span><span class="n">vers</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">ou</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">adresses</span><span class="w"> </span><span class="n">indiquées</span><span class="o">.</span><span class="w"> </span><span class="nc">Il</span><span class="w"> </span><span class="n">n</span><span class="sc">&#39;y a pas de valeur par défaut pour l&#39;</span><span class="n">adresse</span><span class="w"> </span><span class="n">d</span><span class="sc">&#39;émission.
+   </span><span class="nc">Address</span><span class="w"> </span><span class="n">address</span><span class="w">
+        </span><span class="nc">Sends</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="n">broadcast</span><span class="w"> </span><span class="n">queries</span><span class="w"> </span><span class="p" data-group-id="3897797944-2">(</span><span class="k">for</span><span class="w"> </span><span class="n">discovery</span><span class="p" data-group-id="3897797944-2">)</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">specified</span><span class="w"> </span><span class="n">address</span><span class="p" data-group-id="3897797944-3">(</span><span class="n">es</span><span class="p" data-group-id="3897797944-3">)</span><span class="o">.</span><span class="w">  </span><span class="nc">There</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">broadcast</span><span class="w"> </span><span class="n">address</span><span class="o">.</span><span class="w">
 
-   Community nom
-        Indiquer le nom de communauté à utiliser. Il ne peut être indiqué qu&#39;</span><span class="n">un</span><span class="w"> </span><span class="n">seul</span><span class="w"> </span><span class="n">nom</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">communauté</span><span class="o">.</span><span class="w"> </span><span class="nc">La</span><span class="w"> </span><span class="n">communauté</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">défaut</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="err">«</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="err">»</span><span class="o">.</span><span class="w">  </span><span class="nc">Si</span><span class="w">  </span><span class="n">aucun</span><span class="w">  </span><span class="n">nom</span><span class="w">
-        </span><span class="n">n</span><span class="err">’</span><span class="n">est</span><span class="w"> </span><span class="n">indiqué</span><span class="p">,</span><span class="w"> </span><span class="n">toutes</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">fonctions</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="n">sont</span><span class="w"> </span><span class="n">désactivées</span><span class="o">.</span><span class="w">
+   </span><span class="nc">Community</span><span class="w"> </span><span class="n">name</span><span class="w">
+        </span><span class="nc">Specifies</span><span class="w">  </span><span class="n">the</span><span class="w">  </span><span class="n">community</span><span class="w">  </span><span class="n">name</span><span class="w">  </span><span class="n">to</span><span class="w"> </span><span class="kn">use</span><span class="o">.</span><span class="w">  </span><span class="nc">Only</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">single</span><span class="w"> </span><span class="n">community</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">may</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">specified</span><span class="o">.</span><span class="w">  </span><span class="nc">The</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">community</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="o">.</span><span class="w">  </span><span class="nc">If</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">specified</span><span class="p">,</span><span class="w"> </span><span class="n">all</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="n">functions</span><span class="w"> </span><span class="n">are</span><span class="w">
+        </span><span class="n">disabled</span><span class="o">.</span><span class="w">
 
-   </span><span class="nc">DebugLevel</span><span class="w"> </span><span class="n">nombre</span><span class="w">
-        </span><span class="nc">Indiquer</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">niveau</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">journalisation</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p" data-group-id="5262219451-3">(</span><span class="n">aucun</span><span class="p" data-group-id="5262219451-3">)</span><span class="w"> </span><span class="n">à</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p" data-group-id="5262219451-4">(</span><span class="n">tout</span><span class="p" data-group-id="5262219451-4">)</span><span class="o">.</span><span class="w"> </span><span class="nc">G</span><span class="n">énéralement</span><span class="w"> </span><span class="n">cela</span><span class="w"> </span><span class="n">n</span><span class="sc">&#39;est utilisé qu&#39;</span><span class="n">à</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">fins</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">débogage</span><span class="w"> </span><span class="p" data-group-id="5262219451-5">(</span><span class="n">d</span><span class="sc">&#39;où le nom). Le niveau par dé‐
-        faut de débogage est 0.
+   </span><span class="nc">DebugLevel</span><span class="w"> </span><span class="n">number</span><span class="w">
+        </span><span class="nc">Specifies</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">logging</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p" data-group-id="3897797944-4">(</span><span class="n">none</span><span class="p" data-group-id="3897797944-4">)</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="p" data-group-id="3897797944-5">(</span><span class="n">everything</span><span class="p" data-group-id="3897797944-5">)</span><span class="o">.</span><span class="w">  </span><span class="nc">Typically</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">debugging</span><span class="w"> </span><span class="p" data-group-id="3897797944-6">(</span><span class="n">thus</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">name</span><span class="p" data-group-id="3897797944-6">)</span><span class="o">.</span><span class="w">  </span><span class="nc">The</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">debug</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="mi">0</span><span class="o">.</span><span class="w">
 
-   DeviceURI &quot;exp_rationnelle&quot; uri_périphérique [... uri_périphérique]
-        Indiquer un ou plusieurs URI de périphériques qui doivent être utilisés pour une marque et un modèle. L&#39;</span><span class="n">expression</span><span class="w"> </span><span class="n">rationnelle</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">utilisée</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">corres</span><span class="err">‐</span><span class="w">
-        </span><span class="n">pondance</span><span class="w">  </span><span class="n">avec</span><span class="w">  </span><span class="n">la</span><span class="w">  </span><span class="n">marque</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">modèle</span><span class="p">,</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">chaînes</span><span class="w"> </span><span class="n">d</span><span class="err">’</span><span class="nc">URI</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">périphérique</span><span class="w"> </span><span class="n">doivent</span><span class="w"> </span><span class="n">être</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">forme</span><span class="w"> </span><span class="err">«</span><span class="w"> </span><span class="n">schéma</span><span class="ss">://</span><span class="p">%</span><span class="n">s</span><span class="p" data-group-id="5262219451-6">[</span><span class="ss">:port</span><span class="p" data-group-id="5262219451-6">]</span><span class="o">/</span><span class="p" data-group-id="5262219451-7">[</span><span class="n">chemin</span><span class="p" data-group-id="5262219451-7">]</span><span class="w"> </span><span class="err">»</span><span class="p">,</span><span class="w"> </span><span class="n">où</span><span class="w"> </span><span class="err">«</span><span class="w"> </span><span class="p">%</span><span class="n">s</span><span class="w"> </span><span class="err">»</span><span class="w"> </span><span class="n">repré</span><span class="err">‐</span><span class="w">
-        </span><span class="n">sente</span><span class="w"> </span><span class="n">l</span><span class="sc">&#39;adresse détectée ou le nom d&#39;</span><span class="n">hôte</span><span class="o">.</span><span class="w"> </span><span class="nc">Il</span><span class="w"> </span><span class="n">n</span><span class="sc">&#39;y a pas de règle d&#39;</span><span class="n">harmonisation</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">schémas</span><span class="w"> </span><span class="n">d</span><span class="err">’</span><span class="nc">URI</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">périphériques</span><span class="o">.</span><span class="w">
+   </span><span class="nc">DeviceURI</span><span class="w"> </span><span class="s">&quot;regular expression&quot;</span><span class="w"> </span><span class="n">device</span><span class="o">-</span><span class="n">uri</span><span class="w"> </span><span class="p" data-group-id="3897797944-7">[</span><span class="n">...</span><span class="w"> </span><span class="n">device</span><span class="o">-</span><span class="n">uri</span><span class="p" data-group-id="3897797944-7">]</span><span class="w">
+        </span><span class="nc">Specifies</span><span class="w"> </span><span class="n">one</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">more</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="nc">URIs</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="n">string</span><span class="o">.</span><span class="w">  </span><span class="nc">The</span><span class="w"> </span><span class="n">regular</span><span class="w"> </span><span class="n">expression</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">match</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">detected</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">device</span><span class="w">  </span><span class="nc">URI</span><span class="w">
+        </span><span class="n">strings</span><span class="w"> </span><span class="n">must</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">form</span><span class="w"> </span><span class="s">&quot;scheme://%s[:port]/[path]&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">where</span><span class="w"> </span><span class="s">&quot;%s&quot;</span><span class="w"> </span><span class="n">represents</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">detected</span><span class="w"> </span><span class="n">address</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">hostname</span><span class="o">.</span><span class="w">  </span><span class="nc">There</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">device</span><span class="w"> </span><span class="nc">URI</span><span class="w"> </span><span class="n">matching</span><span class="w"> </span><span class="n">rules</span><span class="o">.</span><span class="w">
 
    </span><span class="nc">HostNameLookups</span><span class="w"> </span><span class="n">on</span><span class="w">
 
    </span><span class="nc">HostNameLookups</span><span class="w"> </span><span class="n">off</span><span class="w">
-        </span><span class="nc">D</span><span class="n">éfinir</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">adresses</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">imprimantes</span><span class="w"> </span><span class="n">doivent</span><span class="w"> </span><span class="n">être</span><span class="w"> </span><span class="n">converties</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">noms</span><span class="w"> </span><span class="n">d</span><span class="err">&#39;</span><span class="n">hôte</span><span class="w"> </span><span class="n">ou</span><span class="w"> </span><span class="n">doivent</span><span class="w"> </span><span class="n">être</span><span class="w"> </span><span class="n">laissées</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">adresses</span><span class="w"> </span><span class="nc">IP</span><span class="w"> </span><span class="n">numériques</span><span class="o">.</span><span class="w"> </span><span class="nc">La</span><span class="w"> </span><span class="n">valeur</span><span class="w"> </span><span class="n">par</span><span class="w">  </span><span class="n">défaut</span><span class="w">
-        </span><span class="n">est</span><span class="w"> </span><span class="err">«</span><span class="w"> </span><span class="n">off</span><span class="w"> </span><span class="err">»</span><span class="o">.</span><span class="w">
+        </span><span class="nc">Specifies</span><span class="w"> </span><span class="n">whether</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">addresses</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">printers</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">converted</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">hostnames</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">numeric</span><span class="w"> </span><span class="nc">IP</span><span class="w"> </span><span class="n">addresses</span><span class="o">.</span><span class="w">  </span><span class="nc">The</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="s">&quot;off&quot;</span><span class="o">.</span><span class="w">
 
-   </span><span class="nc">MaxRunTime</span><span class="w"> </span><span class="n">secondes</span><span class="w">
-        </span><span class="nc">Indiquer</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">nombre</span><span class="w"> </span><span class="n">maximal</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">secondes</span><span class="w"> </span><span class="n">entre</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">requêtes</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">programme</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">transmission</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">découverte</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">imprimantes</span><span class="w"> </span><span class="n">réseau</span><span class="o">.</span><span class="w"> </span><span class="nc">La</span><span class="w"> </span><span class="n">valeur</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">dé</span><span class="err">‐</span><span class="w">
-        </span><span class="n">faut</span><span class="w"> </span><span class="n">est</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">120</span><span class="w"> </span><span class="n">secondes</span><span class="w"> </span><span class="p" data-group-id="5262219451-8">(</span><span class="mi">2</span><span class="w"> </span><span class="n">minutes</span><span class="p" data-group-id="5262219451-8">)</span><span class="o">.</span></code></pre><p>NOTES</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">Les</span><span class="w"> </span><span class="n">programmes</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">transmission</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="nc">CUPS</span><span class="w"> </span><span class="n">sont</span><span class="w"> </span><span class="n">devenus</span><span class="w"> </span><span class="n">obsolètes</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">ne</span><span class="w"> </span><span class="n">seront</span><span class="w"> </span><span class="n">plus</span><span class="w"> </span><span class="n">gérés</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">une</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="n">future</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="nc">CUPS</span><span class="o">.</span><span class="w"> </span><span class="nc">Les</span><span class="w">  </span><span class="n">imprimantes</span><span class="w">  </span><span class="n">ne</span><span class="w">  </span><span class="n">gérant</span><span class="w">  </span><span class="n">pas</span><span class="w">  </span><span class="nc">IPP</span><span class="w">
-   </span><span class="n">peuvent</span><span class="w"> </span><span class="n">être</span><span class="w"> </span><span class="n">gérées</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">applications</span><span class="w"> </span><span class="n">telles</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">ippeveprinter</span><span class="p" data-group-id="7285095697-1">(</span><span class="mi">1</span><span class="p" data-group-id="7285095697-1">)</span><span class="o">.</span></code></pre><p>VOIR AUSSI</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="n">cups</span><span class="o">-</span><span class="n">snmp</span><span class="p" data-group-id="1632294593-1">(</span><span class="mi">8</span><span class="p" data-group-id="1632294593-1">)</span><span class="p">,</span><span class="w"> </span><span class="n">aide</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">ligne</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="nc">CUPS</span><span class="w"> </span><span class="o">&lt;</span><span class="nc">URL</span><span class="ss">:http</span><span class="ss">://</span><span class="n">localhost</span><span class="p">:</span><span class="mi">631</span><span class="o">/</span><span class="n">help</span><span class="o">&gt;</span></code></pre><p>COPYRIGHT</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">Copyright</span><span class="w"> </span><span class="err">©</span><span class="w"> </span><span class="mi">2021</span><span class="o">-</span><span class="mi">2022</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="nc">OpenPrinting</span><span class="o">.</span></code></pre><p>28 février 2021                                                                 CUPS                                                                    snmp.conf(5)</p>
-<div class="bottom-actions">
+   </span><span class="nc">MaxRunTime</span><span class="w"> </span><span class="n">seconds</span><span class="w">
+        </span><span class="nc">Specifies</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">maximum</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="nc">SNMP</span><span class="w"> </span><span class="n">backend</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">scan</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">network</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">printers</span><span class="o">.</span><span class="w">  </span><span class="nc">The</span><span class="w"> </span><span class="n">default</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="mi">120</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p" data-group-id="3897797944-8">(</span><span class="mi">2</span><span class="w"> </span><span class="n">minutes</span><span class="p" data-group-id="3897797944-8">)</span><span class="o">.</span></code></pre><p>NOTES</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">CUPS</span><span class="w">  </span><span class="n">backends</span><span class="w">  </span><span class="n">are</span><span class="w">  </span><span class="n">deprecated</span><span class="w">  </span><span class="ow">and</span><span class="w">  </span><span class="n">will</span><span class="w">  </span><span class="n">no</span><span class="w">  </span><span class="n">longer</span><span class="w">  </span><span class="n">be</span><span class="w"> </span><span class="n">supported</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">future</span><span class="w"> </span><span class="n">feature</span><span class="w"> </span><span class="n">release</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nc">CUPS</span><span class="o">.</span><span class="w">  </span><span class="nc">Printers</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="k" data-group-id="0964416035-1">do</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">support</span><span class="w"> </span><span class="nc">IPP</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">supported</span><span class="w"> </span><span class="n">using</span><span class="w"> </span><span class="n">applications</span><span class="w"> </span><span class="n">such</span><span class="w"> </span><span class="n">as</span><span class="w">
+   </span><span class="n">ippeveprinter</span><span class="p" data-group-id="0964416035-2">(</span><span class="mi">1</span><span class="p" data-group-id="0964416035-2">)</span><span class="o">.</span></code></pre><p>SEE ALSO</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="n">cups</span><span class="o">-</span><span class="n">snmp</span><span class="p" data-group-id="4566264860-1">(</span><span class="mi">8</span><span class="p" data-group-id="4566264860-1">)</span><span class="p">,</span><span class="w"> </span><span class="nc">CUPS</span><span class="w"> </span><span class="nc">Online</span><span class="w"> </span><span class="nc">Help</span><span class="w"> </span><span class="p" data-group-id="4566264860-2">(</span><span class="n">http</span><span class="ss">://</span><span class="n">localhost</span><span class="p">:</span><span class="mi">631</span><span class="o">/</span><span class="n">help</span><span class="p" data-group-id="4566264860-2">)</span></code></pre><p>COPYRIGHT</p><pre><code class="makeup elixir" translate="no"><span class="w">   </span><span class="nc">Copyright</span><span class="w"> </span><span class="err">©</span><span class="w"> </span><span class="mi">2020</span><span class="o">-</span><span class="mi">2024</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="nc">OpenPrinting</span><span class="o">.</span></code></pre><p>2021-02-28                                                                                   CUPS                                                                                 snmp.conf(5)</p>
+
+</div>
+
+<div class="bottom-actions" id="bottom-actions">
   <div class="bottom-actions-item">
 
       <a href="cups-files-conf.html" class="bottom-actions-button" rel="prev">
@@ -175,30 +144,29 @@ deb822
 
   </div>
 </div>
-      <footer class="footer">
-        <p>
+    <footer class="footer">
+      <p>
 
-          <span class="line">
-            <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
-              Search HexDocs
-            </button>
+        <span class="line">
+          <button class="a-main footer-button display-quick-switch" title="Search HexDocs packages">
+            Search HexDocs
+          </button>
 
-          </span>
-        </p>
+        </span>
+      </p>
 
-        <p class="built-using">
-          Built using
-          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.31.0) for the
+      <p class="built-using">
+        Built using
+        <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.38.2) for the
 
-            <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
+          <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
 
-        </p>
-      </footer>
-    </div>
+      </p>
+
+    </footer>
   </div>
 </main>
 </div>
-
 
   </body>
 </html>
